@@ -21,4 +21,3 @@ const calculateHourlyWage = function(salary, hoursPerWeek) {
 calculateHourlyWage(52000, 40); // Expected output: "Hourly Wage: $25.00"
 calculateHourlyWage(75000, 35); // Expected output: "Hourly Wage: $41.21"
 
-//Task 3-
