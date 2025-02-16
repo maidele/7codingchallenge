@@ -21,3 +21,17 @@ const calculateHourlyWage = function(salary, hoursPerWeek) {
 calculateHourlyWage(52000, 40); // Expected output: "Hourly Wage: $25.00"
 calculateHourlyWage(75000, 35); // Expected output: "Hourly Wage: $41.21"
 
+// Task 3 - Customer Loyalty Discount; Arrow Function
+
+const calculateLoyaltyDiscount = (amount, years) => {
+    let discount = 0;
+    if (years >= 5) discount = amount- (amount * 0.15);
+    else if (years >= 3) discount = amount * 0.1;
+    else discount = amount- (amount * 0.05);
+    
+    console.log(`Discounted Price: $${discount}`);
+};
+
+// Test Cases
+calculateLoyaltyDiscount(100, 6); // Expected output: "Discounted Price: $85.00"
+calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00"
