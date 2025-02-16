@@ -81,4 +81,24 @@ function filterHighValueTransactions(transactions, filterFunction) {
  let transactions = [500, 1200, 3000, 800, 2200];
  filterHighValueTransactions(transactions, amount => amount > 1000);
  // Expected output: [1200, 3000, 2200]
+
+ //
+
+
+//Task 7-
+
+function createBudgetTracker() {
+    let totalBalance = 0;
+   
+    return function(balance) {
+        totalBalance -= balance;
+        return `Current Balance: $${totalBalance}`;
+    };
+ }
+ 
+ 
+ // Test Cases
+ let budget = createBudgetTracker();
+ console.log(budget(300)); // Expected output: "Current Balance: -$300"
+ console.log(budget(200)); // Expected output: "Current Balance: -$500"
  
