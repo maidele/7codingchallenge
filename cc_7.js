@@ -53,7 +53,9 @@ function calculateShippingCost(weight, location, expedited = false) {
         cost +=10
 
     }
-    return cost.toFixed(2);
+    return `Shipping Cost: $${cost.toFixed(2)}`;
+
+    
     
 }
 
@@ -64,7 +66,7 @@ console.log(calculateShippingCost(5, "Canada", false)); // Expected output: "Shi
 //Task 5- Business Loan Interest Calculation, Returning Values
 function calculateLoanInterest(principal, rate, years) {
     let interest= principal * rate * years;
-    return (`Total Interest: $${interest.toFixed(2)}`);
+    return `Total Interest: $${interest.toFixed(2)}`;
  }
  
  
