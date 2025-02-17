@@ -2,7 +2,7 @@
 
 function calculateInvoice(subtotal, taxRate, discount) {
     let Total = (subtotal + (subtotal * taxRate)) - discount
-    console.log(`Total Invoive: $${Total.toFixed(2)}`);
+    console.log(`Total Invoive: $${Total.toFixed(2)}`);// Logging for invoice
 
 }
 
@@ -14,7 +14,7 @@ calculateInvoice(500, 0.1, 20); // Expected output: "Total Invoice: $530.00"
 
 const calculateHourlyWage = function(salary, hoursPerWeek) {
     let HourlyWage = salary / (hoursPerWeek * 52)
-    console.log(`Hourly Wage: $${HourlyWage.toFixed(2)}`);
+    console.log(`Hourly Wage: $${HourlyWage.toFixed(2)}`);//logging for hourly wage
 };
 
 // Test Data
@@ -29,7 +29,7 @@ const calculateLoyaltyDiscount = (amount, years) => {
     else if (years >= 3) discount = amount * 0.1;
     else discount = amount- (amount * 0.05);
     
-    console.log(`Discounted Price: $${discount}`);
+    console.log(`Discounted Price: $${discount}`);// logging for discounted price
 };
 
 // Test Cases
@@ -53,7 +53,7 @@ function calculateShippingCost(weight, location, expedited = false) {
         cost +=10
 
     }
-    return `Shipping Cost: $${cost.toFixed(2)}`;
+    return `Shipping Cost: $${cost.toFixed(2)}`;// logging for shipping cost
 
     
     
@@ -66,7 +66,7 @@ console.log(calculateShippingCost(5, "Canada", false)); // Expected output: "Shi
 //Task 5- Business Loan Interest Calculation, Returning Values
 function calculateLoanInterest(principal, rate, years) {
     let interest= principal * rate * years;
-    return `Total Interest: $${interest.toFixed(2)}`;
+    return `Total Interest: $${interest.toFixed(2)}`;// logging the loan interest
  }
  
  
@@ -78,7 +78,7 @@ function calculateLoanInterest(principal, rate, years) {
 //Task 6: Higher-Order Functions
 function filterHighValueTransactions(transactions, filterFunction) {
     let HighValueTransactions = transactions.filter(filterFunction);
-    console.log(` ${HighValueTransactions}`);
+    console.log(` ${HighValueTransactions}`);//logging the high value transactions
  }
  let transactions = [500, 1200, 3000, 800, 2200];
  filterHighValueTransactions(transactions, amount => amount > 1000);
@@ -94,7 +94,7 @@ function createBudgetTracker() {
    
     return function(balance) {
         totalBalance -= balance;
-        return `Current Balance: $${totalBalance}`;
+        return `Current Balance: $${totalBalance}`;// logging the budget tracker
     };
  }
  
@@ -108,7 +108,7 @@ function createBudgetTracker() {
  
 function calculateGrowth(years, revenue) {
     if (years >= 10) return `Projected Revenue: $${revenue.toFixed(2)}`; 
-    return calculateGrowth(years + 1, revenue * 1.05.toFixed(2));
+    return calculateGrowth(years + 1, revenue * 1.05.toFixed(2));// logging the growth that was calculated
  }
  
  

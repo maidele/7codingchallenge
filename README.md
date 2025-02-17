@@ -1,0 +1,1 @@
+This is challenge 7. This challenge is about functions and includes tasks such as: Function expression, function declaration, arrow function, parameter, etc. You can run my code in your browers and the console should display the details of my code. 
