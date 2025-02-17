@@ -105,9 +105,8 @@ function createBudgetTracker() {
  //Task 8-
  
 function calculateGrowth(years, revenue) {
-    if (years == 10) return revenue;
-    revenue *= 1.05
-    return calculateGrowth(years + 1, revenue.toFixed(2));
+    if (years == 10) return revenue.toFixed(2); 
+    return calculateGrowth(years + 1, revenue *= 1.05.toFixed(2));
  }
  
  
